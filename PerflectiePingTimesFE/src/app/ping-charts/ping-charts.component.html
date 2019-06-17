@@ -1,0 +1,7 @@
+<p>
+  ping-charts works!
+</p>
+<ng-container *ngFor="let domain of pingTimeService.domainList | async">
+  <h1>Pings for {{domain.domain}}</h1>
+  <app-ping-chart [domain]="domain.domain" [items]="domain.items"></app-ping-chart>
+ </ng-container>

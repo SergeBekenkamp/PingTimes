@@ -1,0 +1,9 @@
+<ng-container *ngFor="let item of localItems$ | async">
+  <span>ping to {{item.domain}} took: {{item.timeInMs}}ms</span>
+</ng-container>
+
+
+
+<ngx-charts-line-chart [results]="chartData | async">
+
+</ngx-charts-line-chart>
